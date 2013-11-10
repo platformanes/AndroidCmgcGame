@@ -10,19 +10,19 @@ AndroidCmgcGame
 
 ## 编写ANE过程
 
->A.参照我博客的教程[传送门](http://www.shadowkong.com/archives/1090)的前提下
->B.取消合并jar,直接取eclipse中的 `bin/cmgcane.jar` 到`Android-ARM`中 
->C.取官方SDK提供的res 到 Android-ARM中 
->D.修改`android-ARM\res\values\g_string.xml`中的 `g_class_name` 对应值为你项目的包名
->E.取官方DEMO中的libs中的libmegjb.so库 到 Android-ARM/libs 中
->F.按照`buildANE`下的bat命令生成ANE(注意配置`本地路径`)
+> A.参照我博客的教程[传送门](http://www.shadowkong.com/archives/1090)的前提下
+> B.取消合并jar,直接取eclipse中的 `bin/cmgcane.jar` 到`Android-ARM`中 
+> C.取官方SDK提供的res 到 Android-ARM中 
+> D.修改`android-ARM\res\values\g_string.xml`中的 `g_class_name` 对应值为你项目的包名
+> E.取官方DEMO中的libs中的libmegjb.so库 到 Android-ARM/libs 中
+> F.按照`buildANE`下的bat命令生成ANE(注意配置`本地路径`)
 		ANE编写到此结束.下面打包APK才是重中之重
 
 ##　打包APK过程
->A.参照 `AndroidCmgcGame\buildAPK\cmgc.bat`中的命令 其中adt路径修改为你的本地路径
->B.下载`apktool`工具(自行g.cn)
->C.在A中生成的APK假设为 `demo.apk`,使用工具反编译:`apktool d demo.apk demo`
->D.修改`demo/AndroidManifest.xml`文件 例如:
+> A.参照 `AndroidCmgcGame\buildAPK\cmgc.bat`中的命令 其中adt路径修改为你的本地路径
+> B.下载`apktool`工具(自行g.cn)
+> C.在A中生成的APK假设为 `demo.apk`,使用工具反编译:`apktool d demo.apk demo`
+> D.修改`demo/AndroidManifest.xml`文件 例如:
 
 ### 未修改之前的AndroidManifest.xml
 
@@ -74,8 +74,8 @@ AndroidCmgcGame
                       android:anyDensity="true"
                       android:normalScreens="true"/>
 
->F.适用工具编译APK `apktool b demo demo_sig.apk`
->G.`demo_sig.apk` 便是aneTest中的`cmgc_demo.apk`
+> F.适用工具编译APK `apktool b demo demo_sig.apk`
+> G.`demo_sig.apk` 便是aneTest中的`cmgc_demo.apk`
 
 
 ## 作者
