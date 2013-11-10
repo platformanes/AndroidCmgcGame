@@ -86,6 +86,9 @@ AndroidCmgcGame
 >  
 > G.`demo_sig.apk` 便是aneTest中的`cmgc_demo.apk`
 
+## 最后提醒(你能看到这的话 代表你距离成功不远了)
+> 提醒(1):若以上那么多步 错了任何一步,都会失败
+> 提醒(2):若SDK文档或此README有任何错看的地方,都会失败
 
 ## 作者
 
