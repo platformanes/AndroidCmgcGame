@@ -25,9 +25,7 @@ AndroidCmgcGame
 >D.修改`demo/AndroidManifest.xml`文件 例如:
 
 ### 未修改之前的AndroidManifest.xml
-<?xml version="1.0" encoding="utf-8"?>
-<manifest android:versionCode="0" android:versionName="0.0.0" android:installLocation="auto" package="air.com.cmgc.ane"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+
     <application android:label="@string/app_name" android:icon="@drawable/icon" android:hardwareAccelerated="false">
         <activity android:theme="@style/Theme.NoShadow" android:label="@string/app_name" android:name=".AppEntry" android:launchMode="standard" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
@@ -40,23 +38,10 @@ AndroidCmgcGame
             <meta-data android:name="uniqueappversionid" android:value="635d4ef7-9e13-464c-b457-b0945c3e9ba3" />
             <meta-data android:name="initialcontent" android:value="androidCmgcSample.swf" />
         </activity>
-    </application>
-    <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.GET_TASKS" />
-</manifest>
+   
 
 ### 修改之后的AndroidManifest.xml
-<?xml version="1.0" encoding="utf-8"?>
-<manifest android:versionCode="0" android:versionName="0.0.0" android:installLocation="auto" package="air.com.cmgc.ane"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+
     <application android:label="@string/app_name" android:icon="@drawable/icon" android:hardwareAccelerated="false" android:name=".CmgameApplication"
         android:debuggable="true">
         <activity android:theme="@style/Theme.NoShadow" android:label="@string/app_name" android:name=".AppEntry" android:launchMode="standard" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize">
@@ -88,18 +73,6 @@ AndroidCmgcGame
                       android:smallScreens="true"
                       android:anyDensity="true"
                       android:normalScreens="true"/>
-                      
-    <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.GET_TASKS" />
-</manifest>
 
 >F.适用工具编译APK `apktool b demo demo_sig.apk`
 >G.`demo_sig.apk` 便是aneTest中的`cmgc_demo.apk`
