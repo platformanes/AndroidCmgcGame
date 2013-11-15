@@ -18,7 +18,7 @@ AndroidCmgcGame
 >  
 > D.修改`android-ARM\res\values\g_string.xml`中的 `g_class_name` 对应值为你项目的包名
 >  
-> E.取官方DEMO中的libs中的libmegjb.so库 到 `Android-ARM/armeabi-v7a` 中
+> E.取官方DEMO中的libs中的libmegjb.so库 到 `Android-ARM/libs/armeabi-v7a` 中
 >  
 > F.按照`buildANE`下的bat命令生成ANE(注意配置`本地路径`)
 		ANE编写到此结束.下面打包APK才是重中之重
