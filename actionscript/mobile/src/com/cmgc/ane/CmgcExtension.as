@@ -59,7 +59,7 @@ package com.cmgc.ane
 		/**
 		 * 
 		 * @param isCustom 是否自定义计费界面
-		 * @param arguments 标识串
+		 * @param arguments 标识串,关于此参数请查阅SDK官方文档"中国移动游戏基地Android游戏SDK使用说明.doc "
 		 * @param gameName  移动计费界面展现的游戏名称
 		 * @param provider 移动计费界面展现的游戏提供商名称
 		 * @param serviceTel 移动计费界面展现的客服电话
