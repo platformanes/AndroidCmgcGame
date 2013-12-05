@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   width="800" height="480" applicationComplete="handler_appComp(event)"
+			   textAlign="left">
+	<s:layout>
+		<s:VerticalLayout/>
+	</s:layout>
+	<fx:Script>
+		<![CDATA[
+			import com.cmgc.ane.CmgcExtension;
+			
+			import mx.events.FlexEvent;
+			import mx.utils.ObjectUtil;
+			
+			private var isLang:Boolean = false;
+			private function handler_status($evt:StatusEvent):void
+			{
+				showInfo('------------------');
+				showInfo('level:'+ $evt.level , ',code:'+$evt.code);
+			}
+			
+			protected function handler_appComp($evt:FlexEvent):void 
+			{
+				CmgcExtension.getInstance().addEventListener(StatusEvent.STATUS,handler_status);
+				
+			}
+			
+			
+			protected function handler_getStorageBTNclick($evt:MouseEvent):void
+			{
+				clearInfo();
+				showInfo('====================');
+			}
+			
+			
+			protected function handler_getSystemInfoBTNclick($evt:MouseEvent):void
+			{
+				clearInfo();
+				
+			}
+			
+			protected function handler_getPackageInfoBTNclick($evt:MouseEvent):void
+			{
+				
+			}
+			
+			
+			private function showInfo(...$args):void
+			{
+				var __info:String = '';
+				for (var i:int = 0; i < $args.length; i++) 
+				{
+					__info += $args[i] + File.lineEnding;
+				}
+				infoTA.appendText(__info);
+			}
+			
+			
+			
+			private function clearInfo():void
+			{
+				infoTA.text = '';
+			}
+			
+			
+			protected function sdk_handle(event:MouseEvent):void
+			{
+				var b:Button = event.currentTarget as Button;
+				switch(b.id)
+				{
+					
+					case "inits":
+						//详细参数请查看官方SDK文档
+						CmgcExtension.getInstance().CmgcInit(false,"201310311010xyz0","gameName","provider","serviceTel");
+						break;
+					
+					
+					 
+					
+					case "more":
+						CmgcExtension.getInstance().CmgcMoreGame(0);
+						break;  
+					
+					case "music":
+						CmgcExtension.getInstance().CmgcIsMusic();
+						break;  
+					
+					case "pay":
+						CmgcExtension.getInstance().CmgcPay(true,true,"001");
+						break;      
+					
+					case "exits":
+						CmgcExtension.getInstance().CmgcExit(0);
+						exit();  
+						break; 
+				}
+			}
+			
+			
+			
+			private function exit():void
+			{
+				NativeApplication.nativeApplication.exit();      
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<s:HGroup width="50%" horizontalAlign="center">
+		<s:Label id="COM" width="406" height="41" color="#6A13ED" fontFamily="Arial" fontWeight="bold"
+				 text="Cmgc ANE(by Rect)" textAlign="center" verticalAlign="middle"/>
+	</s:HGroup>
+	
+	<s:TileGroup width="100%" height="179" verticalAlign="justify">
+		<s:Button id="inits" y="12" width="144" height="40" label="初始" click="sdk_handle(event)"
+				  fontFamily="_serif" fontSize="20" fontStyle="normal" fontWeight="bold"/>
+		<s:Button id="pay" label="支付" click="sdk_handle(event)"
+				  fontFamily="_serif" fontSize="20" fontStyle="normal" fontWeight="bold"/>
+		<s:Button id="more" width="50%" height="40" label="更多" click="sdk_handle(event)"
+				  fontFamily="_serif" fontSize="20" fontStyle="normal" fontWeight="bold"/>
+		<s:Button id="music" label="音乐" click="sdk_handle(event)"
+				  fontFamily="_serif" fontSize="20" fontStyle="normal" fontWeight="bold"/>
+		<s:Button id="exits" width="50%" label="退 出" click="sdk_handle(event)"
+				  fontFamily="_serif" fontSize="20" fontStyle="normal" fontWeight="bold"/>
+		
+	</s:TileGroup>  
+	
+	<s:TextArea id="infoTA" width="100%" height="536" color="#030715" textAlign="left" fontSize="20"/>
+	
+	<s:VGroup width="50%" height="400" horizontalAlign="right">
+		<s:HGroup>
+		</s:HGroup>
+	</s:VGroup>
+</s:Application>
