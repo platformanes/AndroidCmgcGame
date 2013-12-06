@@ -7,6 +7,7 @@ AndroidCmgcGame
 
 * 参照官方DEMO所编写
 * 特别提醒:此SDK相对AIR项目来说需要修改几个特别的地方.正常的方式打包的APK是无法运行的.
+* 此ANE调用DEMO在aneTest文件夹中
 
 ## 编写ANE过程
 
