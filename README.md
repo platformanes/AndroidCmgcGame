@@ -84,8 +84,10 @@ AndroidCmgcGame
                       android:normalScreens="true"/>
 
 > F.适用工具编译APK `apktool b demo demo_sig.apk`
+>
+> G.使用APK签名工具签名`demo_sig.apk`
 >  
-> G.`demo_sig.apk` 便是aneTest中的`cmgc_demo.apk`
+> H.`demo_sig.apk` 便是aneTest中的`cmgc_demo.apk`
 
 ## 最后提醒(你能看到这的话 代表你距离成功不远了)
 
