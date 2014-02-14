@@ -5,11 +5,12 @@ AndroidCmgcGame
 
 ## 中国移动游戏基地Android平台的的ANE
 
-* 参照官方DEMO所编写
+* 参照官方DEMO所编写.
 * 特别提醒:此SDK相对AIR项目来说需要修改几个特别的地方.正常的方式打包的APK是无法运行的.
 * 此ANE调用DEMO在aneTest文件夹中
-* 若SDK版本不对会导致闪退，请在本机替换jar 资源 重新生成ANE
+* 若SDK版本不对会导致闪退，请在本机替换jar ,资源 重新生成ANE
 * 注意使用前检查SDK版本
+* 不保证SDK升级后完全适用。
 
 ## 编写ANE过程
 
