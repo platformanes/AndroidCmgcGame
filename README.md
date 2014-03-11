@@ -16,15 +16,17 @@ AndroidCmgcGame
 
 > A.参照我博客的教程[传送门](http://www.shadowkong.com/archives/1090)的前提下
 >  
-> B.取消合并jar,直接取eclipse中的 `bin/cmgcane.jar` 到`Android-ARM`中 
+> B.修改ANE源码中的CmgameApplication类的路径为AIR项目包名(eg:air.com.cmge.ane.CmgameApplication)
+>
+> C.取消合并jar,直接取eclipse中的 `bin/cmgcane.jar` 到`Android-ARM`中 
 >  
-> C.取官方SDK提供的res 到 Android-ARM中 
+> D.取官方SDK提供的res 到 Android-ARM中 
 >  
-> D.修改`android-ARM\res\values\g_string.xml`中的 `g_class_name` 对应值为你项目的包名
+> E.修改`android-ARM\res\values\g_string.xml`中的 `g_class_name` 对应值为你项目的包名
 >  
-> E.取官方DEMO中的libs中的libmegjb.so库 到 `Android-ARM/libs/armeabi-v7a` 中
+> F.取官方DEMO中的libs中的libmegjb.so库 到 `Android-ARM/libs/armeabi-v7a` 中
 >  
-> F.按照`buildANE`下的bat命令生成ANE(注意配置`本地路径`)
+> G.按照`buildANE`下的bat命令生成ANE(注意配置`本地路径`)
 		ANE编写到此结束.下面打包APK才是重中之重
 
 ## 打包APK过程
