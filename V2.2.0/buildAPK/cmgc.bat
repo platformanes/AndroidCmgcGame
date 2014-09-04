@@ -1,0 +1,1 @@
+"D:\FlashBuilder\Adobe Flash Builder 4.6\sdks\AIR3.5\bin\adt"  -package -target apk -storetype pkcs12 -keystore a.p12 -storepass 1234 cmgc.apk androidCmgcSample-app.xml androidCmgcSample.swf CMGC OpeningAnimation Charge.xml Config.xml ConsumeCodeInfo.xml s_data_store.dat d_data_store.dat -extdir .

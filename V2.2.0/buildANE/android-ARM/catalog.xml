@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="com/cmgc/ane/CmgcEvents" mod="1384090102009" signatureChecksum="3677117890" >
+        <def id="com.cmgc.ane:CmgcEvents" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="com/cmgc/ane/CmgcExtension" mod="1384090056192" signatureChecksum="1115029781" >
+        <def id="com.cmgc.ane:CmgcExtension" /> 
+        <dep id="flash.events:StatusEvent" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="flash.events:IEventDispatcher" type="s" /> 
+        <dep id="flash.events:StatusEvent" type="s" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="_c8c8898840cbd52caa72e02c85b1554f75b8e05ba227b766160503363c3be4d2_flash_display_Sprite" mod="1384090119710" signatureChecksum="3506665827" >
+        <def id="_c8c8898840cbd52caa72e02c85b1554f75b8e05ba227b766160503363c3be4d2_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="ab758ddd028bd95c89494bead92efca70b2023f61a6544f2035c4c5f7243d4c2"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>
