@@ -22,7 +22,7 @@ AndroidCmgcGame
 >  
 > D.取官方SDK提供的res 到 Android-ARM中 
 >  
-> E.修改`android-ARM\res\values\g_string.xml`中的 `g_class_name` 对应值为你项目的包名
+> E.修改`android-ARM\res\values\g_string.xml`中的 `g_class_name` 对应值为你项目的包名+`.AppEntry`
 >  
 > F.取官方DEMO中的libs中的libmegjb.so库 到 `Android-ARM/libs/armeabi-v7a` 中
 >  
